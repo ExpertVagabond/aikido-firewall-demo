@@ -1,0 +1,25 @@
+{
+  "name": "aikido-firewall-demo",
+  "version": "1.0.0",
+  "description": "Demo of Aikido Security runtime firewall blocking SQL injection and path traversal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --import @aikidosec/firewall/instrument server.js",
+    "test": "bash test-attacks.sh"
+  },
+  "keywords": [
+    "aikido",
+    "firewall",
+    "security",
+    "waf",
+    "sql-injection"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@aikidosec/firewall": "^1.8.46",
+    "better-sqlite3": "^13.0.3",
+    "express": "^4.22.3"
+  },
+  "author": "",
+  "type": "commonjs"
+}
